@@ -1,0 +1,19 @@
+<svg viewBox="0 0 900 16" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Animated divider">
+  <defs>
+    <linearGradient id="dline" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff" stop-opacity="0.15"/>
+      <stop offset="0.5" stop-color="#9d7bff" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#58a6ff" stop-opacity="0.15"/>
+    </linearGradient>
+    <filter id="g" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .spark { animation: sweep 4s ease-in-out infinite; }
+      @keyframes sweep { 0% { transform: translateX(0) } 50% { transform: translateX(820px) } 100% { transform: translateX(0) } }
+    </style>
+  </defs>
+  <rect x="0" y="7" width="900" height="2" rx="1" fill="url(#dline)"/>
+  <circle class="spark" cx="40" cy="8" r="4" fill="#9d7bff" filter="url(#g)"/>
+</svg>
