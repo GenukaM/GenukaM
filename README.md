@@ -1,11 +1,11 @@
-<!-- ===================== HEADER BANNER ===================== -->
+<!-- ===================== HERO (custom animated neural-network SVG) ===================== -->
 <div align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=gradient&customColorList=6,11,20&height=220&section=header&text=Genuka%20Manthila&fontSize=48&fontColor=ffffff&animation=fadeIn&fontAlignY=36&desc=Data%20Science%20Undergraduate%20%7C%20AI%20%26%20ML%20Enthusiast&descAlignY=56&descSize=18" width="100%"/>
+  <img src="./assets/hero.svg" width="100%" alt="Genuka Manthila" />
 </div>
 
 <!-- ===================== TYPING ANIMATION ===================== -->
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=24&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Turning+Data+into+Insights+%F0%9F%93%8A;Machine+Learning+%26+AI+Enthusiast+%F0%9F%A4%96;Python+%7C+Java+Developer+%F0%9F%92%BB;Always+Learning%2C+Always+Building+%F0%9F%9A%80" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=58A6FF&center=true&vCenter=true&width=620&lines=Turning+Data+into+Insights+%F0%9F%93%8A;Machine+Learning+%26+AI+Enthusiast+%F0%9F%A4%96;Python+%7C+Java+Developer+%F0%9F%92%BB;Always+Learning%2C+Always+Building+%F0%9F%9A%80" alt="Typing SVG" />
 </div>
 
 <!-- ===================== BADGES ROW ===================== -->
@@ -14,11 +14,7 @@
   <a href="https://github.com/genukam?tab=followers">
     <img src="https://img.shields.io/github/followers/genukam?label=Followers&style=flat-square&color=58A6FF&logo=github" alt="followers" />
   </a>
-</div>
-
-<!-- ===================== ANIMATED DATA BANNER (custom looping SVG, GIF-style) ===================== -->
-<div align="center">
-  <img src="./assets/data-banner.svg" width="100%" alt="animated data science banner" />
+  <img src="https://img.shields.io/badge/Focus-Data%20Science%20%26%20AI-9d7bff?style=flat-square" alt="focus" />
 </div>
 
 <img src="./assets/divider.svg" width="100%" alt="divider" />
@@ -34,7 +30,7 @@
 - 📫 Reach me at **genuka.20210556@iit.ac.lk**
 - ⚡ Fun fact: the best model isn't the most complex one — it's the one that solves a real problem
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="divider" />
 
 <!-- ===================== TECH STACK ===================== -->
 ## 🛠️ Tech Stack & Tools
@@ -68,7 +64,12 @@
 ![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visualstudiocode&logoColor=white)
 ![Photoshop](https://img.shields.io/badge/Photoshop-31A8FF?style=for-the-badge&logo=adobephotoshop&logoColor=white)
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="divider" />
+
+<!-- ===================== DATA BANNER (custom looping SVG) ===================== -->
+<div align="center">
+  <img src="./assets/data-banner.svg" width="100%" alt="animated data science banner" />
+</div>
 
 <!-- ===================== GITHUB STATS ===================== -->
 ## 📊 GitHub Stats
@@ -82,16 +83,12 @@
   <img src="https://streak-stats.demolab.com?user=genukam&theme=tokyonight&hide_border=true" alt="streak stats" />
 </div>
 
-<br/>
-
 <!-- ===================== ACTIVITY GRAPH ===================== -->
 ## 📈 Contribution Graph
 
 <div align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=genukam&theme=tokyo-night&hide_border=true&area=true" width="100%" alt="activity graph" />
 </div>
-
-<br/>
 
 <!-- ===================== TROPHIES ===================== -->
 ## 🏆 Trophies
@@ -100,7 +97,20 @@
   <img src="https://github-profile-trophy.vercel.app/?username=genukam&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8&margin-h=8" alt="trophies" />
 </div>
 
-<br/>
+<img src="./assets/divider.svg" width="100%" alt="divider" />
+
+<!-- ===================== FEATURED PROJECTS ===================== -->
+## 📌 Featured Projects
+
+<div align="center">
+  <!-- 👇 Replace REPO_ONE / REPO_TWO with your actual repo names, and # with the repo links -->
+  <a href="#">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=genukam&repo=REPO_ONE&theme=tokyonight&hide_border=true" alt="repo one" />
+  </a>
+  <a href="#">
+    <img src="https://github-readme-stats.vercel.app/api/pin/?username=genukam&repo=REPO_TWO&theme=tokyonight&hide_border=true" alt="repo two" />
+  </a>
+</div>
 
 <img src="./assets/divider.svg" width="100%" alt="divider" />
 
@@ -124,17 +134,6 @@
     <img src="https://img.shields.io/badge/Portfolio-FF7139?style=for-the-badge&logo=firefoxbrowser&logoColor=white" alt="portfolio" />
   </a>
 </div>
-
-<!-- ===================== SNAKE ANIMATION (optional setup) =====================
-To enable the contribution snake below, create a GitHub Action:
-1. In this repo, add the file: .github/workflows/snake.yml
-2. Use the Platane/snk action (search "Platane/snk" on GitHub for the latest workflow).
-3. Once it runs, uncomment the block below.
-
-<div align="center">
-  <img src="https://raw.githubusercontent.com/genukam/genukam/output/github-contribution-grid-snake-dark.svg" alt="snake animation" />
-</div>
--->
 
 <!-- ===================== FOOTER ===================== -->
 <div align="center">

@@ -1,0 +1,98 @@
+<svg viewBox="0 0 1000 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Genuka Manthila - Data Science">
+  <defs>
+    <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0e14"/>
+      <stop offset="0.55" stop-color="#11151f"/>
+      <stop offset="1" stop-color="#171c2c"/>
+    </linearGradient>
+    <linearGradient id="nameg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="0.5" stop-color="#9d7bff"/>
+      <stop offset="1" stop-color="#58a6ff"/>
+    </linearGradient>
+    <linearGradient id="ul" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#58a6ff"/>
+      <stop offset="1" stop-color="#9d7bff"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.8" cy="0.42" r="0.55">
+      <stop offset="0" stop-color="#3b5bdb" stop-opacity="0.32"/>
+      <stop offset="1" stop-color="#3b5bdb" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-60%" y="-60%" width="220%" height="220%">
+      <feGaussianBlur stdDeviation="2.4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="nglow" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .node { animation: pulse 2.6s ease-in-out infinite; }
+      .nb { animation-delay: .4s } .nc { animation-delay: .8s } .nd { animation-delay: 1.2s }
+      @keyframes pulse { 0%,100% { opacity:.5 } 50% { opacity:1 } }
+      .ulbar { transform-box: fill-box; transform-origin: 0% 50%; animation: stretch 3.5s ease-in-out infinite; }
+      @keyframes stretch { 0%,100% { transform: scaleX(.6) } 50% { transform: scaleX(1) } }
+      .live { animation: blink 1.4s steps(1) infinite; }
+      @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.25 } }
+    </style>
+  </defs>
+
+  <rect width="1000" height="300" rx="18" fill="url(#hbg)"/>
+  <rect width="1000" height="300" rx="18" fill="url(#halo)"/>
+
+  <!-- ===== NEURAL NETWORK (right) ===== -->
+  <!-- edges A(x640) -> B(x790) -->
+  <g stroke="#33405c" stroke-width="1" opacity="0.55">
+    <line x1="640" y1="80" x2="790" y2="65"/>  <line x1="640" y1="80" x2="790" y2="125"/>
+    <line x1="640" y1="80" x2="790" y2="185"/> <line x1="640" y1="80" x2="790" y2="245"/>
+    <line x1="640" y1="150" x2="790" y2="65"/> <line x1="640" y1="150" x2="790" y2="125"/>
+    <line x1="640" y1="150" x2="790" y2="185"/><line x1="640" y1="150" x2="790" y2="245"/>
+    <line x1="640" y1="220" x2="790" y2="65"/> <line x1="640" y1="220" x2="790" y2="125"/>
+    <line x1="640" y1="220" x2="790" y2="185"/><line x1="640" y1="220" x2="790" y2="245"/>
+    <!-- edges B(x790) -> C(x930) -->
+    <line x1="790" y1="65" x2="930" y2="115"/> <line x1="790" y1="65" x2="930" y2="185"/>
+    <line x1="790" y1="125" x2="930" y2="115"/><line x1="790" y1="125" x2="930" y2="185"/>
+    <line x1="790" y1="185" x2="930" y2="115"/><line x1="790" y1="185" x2="930" y2="185"/>
+    <line x1="790" y1="245" x2="930" y2="115"/><line x1="790" y1="245" x2="930" y2="185"/>
+  </g>
+
+  <!-- traveling signals (input -> hidden -> output) -->
+  <g fill="#dbe6ff" filter="url(#nglow)">
+    <circle r="3.6"><animateMotion dur="2.6s" repeatCount="indefinite" path="M640,80 L790,125 L930,115"/></circle>
+    <circle r="3.6"><animateMotion dur="2.6s" begin="0.8s" repeatCount="indefinite" path="M640,150 L790,185 L930,185"/></circle>
+    <circle r="3.6"><animateMotion dur="2.6s" begin="1.6s" repeatCount="indefinite" path="M640,220 L790,65 L930,115"/></circle>
+    <circle r="3.6"><animateMotion dur="2.6s" begin="2.2s" repeatCount="indefinite" path="M640,150 L790,245 L930,185"/></circle>
+  </g>
+
+  <!-- nodes -->
+  <g filter="url(#nglow)">
+    <circle class="node"    cx="640" cy="80"  r="7" fill="#58a6ff"/>
+    <circle class="node nb" cx="640" cy="150" r="7" fill="#58a6ff"/>
+    <circle class="node nc" cx="640" cy="220" r="7" fill="#58a6ff"/>
+    <circle class="node nb" cx="790" cy="65"  r="7" fill="#7c5cff"/>
+    <circle class="node nc" cx="790" cy="125" r="7" fill="#7c5cff"/>
+    <circle class="node"    cx="790" cy="185" r="7" fill="#7c5cff"/>
+    <circle class="node nd" cx="790" cy="245" r="7" fill="#7c5cff"/>
+    <circle class="node nc" cx="930" cy="115" r="8" fill="#9d7bff"/>
+    <circle class="node"    cx="930" cy="185" r="8" fill="#9d7bff"/>
+  </g>
+
+  <!-- ===== TEXT (left) ===== -->
+  <text x="60" y="118" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="46" font-weight="800"
+    fill="url(#nameg)" filter="url(#soft)">Genuka Manthila</text>
+
+  <rect class="ulbar" x="62" y="134" width="300" height="5" rx="2.5" fill="url(#ul)"/>
+
+  <text x="62" y="176" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="21" font-weight="600" fill="#c9d1e6">
+    Data Science Undergraduate</text>
+  <text x="62" y="204" font-family="Consolas, Menlo, monospace" font-size="15" fill="#8b93a7">
+    &lt; AI &amp; ML Enthusiast • Python | Java /&gt;</text>
+
+  <!-- status pill -->
+  <g transform="translate(62,228)">
+    <rect width="232" height="32" rx="16" fill="#10233a" stroke="#1f3a5c" stroke-width="1"/>
+    <circle class="live" cx="20" cy="16" r="5" fill="#3fb950"/>
+    <text x="36" y="21" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="13" font-weight="600" fill="#a9d6b5">
+      Open to collaborate on AI projects</text>
+  </g>
+</svg>
